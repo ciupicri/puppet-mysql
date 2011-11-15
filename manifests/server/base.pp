@@ -2,6 +2,7 @@ class mysql::server::base {
     package { mysql-server:
         ensure => present,
     }
+
     file { 'mysql_main_cnf':
             path => '/etc/mysql/my.cnf',
             source => [
